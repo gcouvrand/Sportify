@@ -22,6 +22,7 @@ export default class AverageSession extends React.Component {
   }
 }
 
+// This chunck of code is given on Recharts to customize the tooltip
 const CustomTooltip = ({ active, payload}) => {
   if (active && payload) {
     return (

@@ -6,6 +6,7 @@ export default class Performance extends React.Component {
     const {kind, data} = this.props.performance;
     let globalData = [];
 
+    // In this loop we use the datas contained in performance to push them into a new array to get what we exactly want
     for (let i = 0; i < data.length; i++) {
       globalData.splice(0,0, {
         category: kind[i+1],

@@ -6,9 +6,11 @@ import Performance from '../models/Performance'
 const GetData = async (data, id) => {
     const getRequest = await fetch(data)
     const jsonResponse = await getRequest.json()
+    // We take the last part of the URL
     const url = data.split("/").pop()
  
     switch (url) {
+        // If the URL contains an ID we generate a new MainData object
         case `${id}`:
 
             return new MainData(   
@@ -17,16 +19,19 @@ const GetData = async (data, id) => {
                 jsonResponse.data.id, 
                 jsonResponse.data.keyData
             )
+        // If the URL contains the activity word we generate a new Activity object
         case "activity":
             return new Activity(
                 jsonResponse.data.userId,
                 jsonResponse.data.sessions
             )
+        // If the URL contains the average-sessions word we generate a new AverageSession object
         case "average-sessions":
             return new AverageSession(
                 jsonResponse.data.userId,
                 jsonResponse.data.sessions
             )
+        // If the URL contains the performance word we generate a new Performance object
         case "performance":
             return new Performance(
                 jsonResponse.data.data,

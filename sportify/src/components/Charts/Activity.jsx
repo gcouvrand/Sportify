@@ -10,6 +10,7 @@ export default class Activity extends React.Component {
       const data = []
       let i = 0;
 
+      // We push the datas contained in sessions into a new array to get what we exactly want
       for (const item of sessions) {
         i++;
         data.push({
@@ -39,6 +40,7 @@ export default class Activity extends React.Component {
     }
 }
 
+// This chunck of code is given on Recharts to customize the tooltip
 const CustomTooltip = ({active, payload}) => {
   if (active && payload) {
     return (

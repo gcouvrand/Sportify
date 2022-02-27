@@ -11,6 +11,7 @@ import Counter from '../Counter'
 export default class Content extends Component {
     constructor() {
         super()
+        // We initiate this.state with empty props
         this.state = {
             userMainData: {},
             userActivity: {},
@@ -19,11 +20,14 @@ export default class Content extends Component {
             isLoaded: false,
         }
     }
+    // We use the componentDidMount method to fetch the datas by calling the GetData function
     async componentDidMount() {
+        // We use the paths provided by the API with the corresponding ID
         const mainData = await GetData(`http://localhost:3000/user/${this.props.id}`,this.props.id)
         const activity = await GetData(`http://localhost:3000/user/${this.props.id}/activity`,this.props.id)
         const averageSessions = await GetData(`http://localhost:3000/user/${this.props.id}/average-sessions`,this.props.id)
         const performance = await GetData(`http://localhost:3000/user/${this.props.id}/performance`,this.props.id)
+        // We're using the fetched datas to fill the props
         this.setState({
             userMainData : mainData,
             userActivity : activity,
@@ -34,8 +38,10 @@ export default class Content extends Component {
     }
     render () {
         return (
+            // If the state of isLoaded is "true", we generate the content of the page
             this.state.isLoaded ?
                 (   
+                // We use the datas contained in the previous props to fill the props of the others components
                 <div>
                     <Hello name={this.state.userMainData.keyData.firstName}/>
                     <div className='content-wrapper'>
