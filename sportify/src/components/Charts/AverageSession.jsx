@@ -1,6 +1,14 @@
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
+/**
+ *  Create a graph of the user's average sessions
+ * 
+ * @class
+ * @param {averageSessions}
+ * @returns user's average sessions graph
+ */
+
 export default class AverageSession extends React.Component {
   render() {
     const {averageSessions} = this.props;
@@ -22,7 +30,13 @@ export default class AverageSession extends React.Component {
   }
 }
 
-// This chunck of code is given on Recharts to customize the tooltip
+/**
+ * Customizes the tooltip
+ * 
+ * @param {payload} the data we want to display 
+ * @returns a customized tooltip
+ */
+
 const CustomTooltip = ({ active, payload}) => {
   if (active && payload) {
     return (

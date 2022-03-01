@@ -1,6 +1,16 @@
 import React from "react";
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
 
+
+/**
+ *  Create a graph of the user's score
+ * 
+ * @class
+ * @params {todayScore} the data we need to calculate the user's score
+ * @returns user's score graph
+ */
+
+
 export default class Score extends React.Component {
     render() {
         const {todayScore} = this.props;

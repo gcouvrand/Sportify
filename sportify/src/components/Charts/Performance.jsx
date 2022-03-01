@@ -1,6 +1,15 @@
 import React from "react";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
 
+/**
+ *  Create a graph of the user's performances
+ * 
+ * @class
+ * @params {kind} an array of all the categories needed
+ * @params {data} the user's datas
+ * @returns user's performances graph
+ */
+
 export default class Performance extends React.Component {
   render() {
     const {kind, data} = this.props.performance;

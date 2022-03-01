@@ -1,6 +1,14 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
+/**
+ *  Create a graph of the user's activity
+ * 
+ * @class
+ * @param {sessions}
+ * @returns user's activity graph
+ */
+
 export default class Activity extends React.Component {
   render() {
       const divStyle = {
@@ -40,7 +48,13 @@ export default class Activity extends React.Component {
     }
 }
 
-// This chunck of code is given on Recharts to customize the tooltip
+/**
+ * Customizes the tooltip
+ * 
+ * @param {payload} the data we want to display 
+ * @returns a customized tooltip
+ */
+
 const CustomTooltip = ({active, payload}) => {
   if (active && payload) {
     return (

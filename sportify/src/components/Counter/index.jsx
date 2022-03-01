@@ -4,6 +4,14 @@ import chicken from "../../assets/chicken.svg"
 import apple from "../../assets/apple.svg"
 import cheeseburger from "../../assets/cheeseburger.svg"
 
+/**
+ *  Creates the counters and uses the datas from the API to add the correct values into it
+ * 
+ * @class
+ * @params {data} the data needed for the counters
+ * @returns the counters with the correct values in it
+ */
+
 export default class Counter extends React.Component {
     render() {
         const {data} = this.props
