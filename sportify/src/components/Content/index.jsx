@@ -60,15 +60,15 @@ export default class Content extends Component {
                 <div>
                     <Hello name={this.state.userMainData.keyData.firstName}/>
                     <div className='content-wrapper'>
-                    <div className="graphs-container">
-                    <Activity activity={this.state.userActivity}/>
-                    <div className="sub-graphs-container">
-                    <AverageSession averageSessions={this.state.userAverageSessions.sessions}/>
-                    <Performance performance={this.state.userPerformance}/>
-                    <Score score={this.state.userMainData?.score} todayScore={this.state.userMainData?.todayScore}/>
-                    </div>
-                    </div>
-                    <Counter data={this.state.userMainData.userInfos}/>
+                        <div className="graphs-container">
+                            <Activity activity={this.state.userActivity}/>
+                            <div className="sub-graphs-container">
+                                <AverageSession averageSessions={this.state.userAverageSessions.sessions}/>
+                                <Performance performance={this.state.userPerformance}/>
+                                <Score score={this.state.userMainData?.score} todayScore={this.state.userMainData?.todayScore}/>
+                            </div>
+                        </div>
+                        <Counter data={this.state.userMainData.userInfos}/>
                     </div>
                 </div>
                 ) 
