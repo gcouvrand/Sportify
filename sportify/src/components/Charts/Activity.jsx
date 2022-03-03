@@ -5,7 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
  *  Create a graph of the user's activity
  * 
  * @class
- * @param {sessions}
+ * @param {Object[]} sessions - array with details about sessions
  * @returns user's activity graph
  */
 

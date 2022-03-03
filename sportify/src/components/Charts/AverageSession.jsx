@@ -5,7 +5,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
  *  Create a graph of the user's average sessions
  * 
  * @class
- * @param {averageSessions}
+ * @param {Object[]} averageSessions - Array with details about average sessions
  * @returns user's average sessions graph
  */
 

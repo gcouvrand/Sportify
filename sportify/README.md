@@ -4,7 +4,7 @@
 
 ## Prerequesites 
 
-- NodeJS
+- NodeJS V. 16.14.0
 - Yarn/Npm
 
 ## Installation 

@@ -5,8 +5,8 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
  *  Create a graph of the user's performances
  * 
  * @class
- * @params {kind} an array of all the categories needed
- * @params {data} the user's datas
+ * @param {Object[]} kind - an array of all the categories needed
+ * @param {Object[]} data - the user's datas
  * @returns user's performances graph
  */
 

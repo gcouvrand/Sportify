@@ -8,7 +8,7 @@ import cheeseburger from "../../assets/cheeseburger.svg"
  *  Creates the counters and uses the datas from the API to add the correct values into it
  * 
  * @class
- * @params {data} the data needed for the counters
+ * @param {Object[]} data - the data needed for the counters
  * @returns the counters with the correct values in it
  */
 

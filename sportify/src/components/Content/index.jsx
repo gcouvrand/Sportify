@@ -12,13 +12,13 @@ import Counter from '../Counter'
  *  Uses the GetData method to fetch the datas needed and fill the components with it
  * 
  * @class
- * @param {this.state.userMainData.keyData.firstName} data user's first name
- * @param {this.state.userActivity} data user's activity
- * @param {this.state.userAverageSessions.sessions} data user's average sessions
- * @param {this.state.userPerformance} data user's performances
- * @param {this.state.userMainData?.score} data user's score
- * @param {this.state.userMainData?.todayScore} data user's score
- * @param {this.state.userMainData.userInfos} data user's infos
+ * @param {string} this.state.userMainData.keyData.firstName - data user's first name
+ * @param {Object[]} this.state.userActivity - data user's activity
+ * @param {Object[]} this.state.userAverageSessions.sessions - data user's average sessions
+ * @param {Object[]} this.state.userPerformance - data user's performances
+ * @param {number} this.state.userMainData.score - data user's score
+ * @param {number} this.state.userMainData.todayScore - data user's score
+ * @param {Object[]} this.state.userMainData.userInfos - data user's infos
  * @returns the components up to date with the needed datas from the API
  */
 

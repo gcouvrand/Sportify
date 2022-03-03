@@ -6,7 +6,7 @@ import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
  *  Create a graph of the user's score
  * 
  * @class
- * @params {todayScore} the data we need to calculate the user's score
+ * @param {number} todayScore - the data we need to calculate the user's score
  * @returns user's score graph
  */
 
