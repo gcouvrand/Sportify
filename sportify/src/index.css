@@ -142,7 +142,7 @@ p {
   width: 200px;
 }
 
-.icon-wrapper-energy {
+.icon-wrapper-calories {
   background-color: #fae9e9;
   width: 60px;
   height: 60px;
@@ -150,21 +150,21 @@ p {
   border-radius: 5px;
 }
 
-.icon-wrapper-chicken {
+.icon-wrapper-proteines {
   background-color: #e8f6ff;
   width: 60px;
   height: 60px;
   margin-right: 25px;
   border-radius: 5px;
 }
-.icon-wrapper-apple {
+.icon-wrapper-glucides {
   background-color: #fff7d6;
   width: 60px;
   height: 60px;
   margin-right: 25px;
   border-radius: 5px;
 }
-.icon-wrapper-cheeseburger {
+.icon-wrapper-lipides {
   background-color: #ffe7ee;
   width: 60px;
   height: 60px;

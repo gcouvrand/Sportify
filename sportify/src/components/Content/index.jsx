@@ -73,33 +73,33 @@ export default class Content extends Component {
                             </div>
                         </div>
                         <div className="counter">
-                        <Counter 
-                            picture={energy}
-                            macroType="energy"
-                            macro={this.state.userMainData.userInfos.calorieCount}
-                            unit="kCal"
-                            macroName="Calories"
+                            <Counter 
+                                picture={energy}
+                                macroType="calories"
+                                macro={this.state.userMainData.userInfos.calorieCount}
+                                unit="kCal"
+                                macroName="Calories"
                             />
-                        <Counter 
-                            picture={chicken}
-                            macroType="chicken"
-                            macro={this.state.userMainData.userInfos.proteinCount}
-                            unit="g"
-                            macroName="Protéines"
+                            <Counter 
+                                picture={chicken}
+                                macroType="proteines"
+                                macro={this.state.userMainData.userInfos.proteinCount}
+                                unit="g"
+                                macroName="Protéines"
                             />
-                        <Counter 
-                            picture={apple}
-                            macroType="apple"
-                            macro={this.state.userMainData.userInfos.carbohydrateCount}
-                            unit="g"
-                            macroName="Glucides"
+                            <Counter 
+                                picture={apple}
+                                macroType="glucides"
+                                macro={this.state.userMainData.userInfos.carbohydrateCount}
+                                unit="g"
+                                macroName="Glucides"
                             />
-                        <Counter 
-                            picture={cheeseburger}
-                            macroType="cheeseburger"
-                            macro={this.state.userMainData.userInfos.lipidCount}
-                            unit="g"
-                            macroName="Lipides"
+                            <Counter 
+                                picture={cheeseburger}
+                                macroType="lipides"
+                                macro={this.state.userMainData.userInfos.lipidCount}
+                                unit="g"
+                                macroName="Lipides"
                             />
                         </div>
                     </div>
