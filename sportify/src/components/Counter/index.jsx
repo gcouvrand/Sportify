@@ -1,60 +1,31 @@
 import React from "react";
-import energy from "../../assets/energy.svg"
-import chicken from "../../assets/chicken.svg"
-import apple from "../../assets/apple.svg"
-import cheeseburger from "../../assets/cheeseburger.svg"
+
 
 /**
  *  Creates the counters and uses the datas from the API to add the correct values into it
  * 
  * @class
- * @param {Object[]} data - the data needed for the counters
+ * @param {string} this.props.macroType - the macro's type for the className
+ * @param {string} this.props.picture - the image's icon source URL
+ * @param {number} this.props.macro - the value of the macro
+ * @param {string} this.props.unit - the unit of the macro
+ * @param {string} this.props.macroName - the name of the macro
  * @returns the counters with the correct values in it
  */
 
 export default class Counter extends React.Component {
     render() {
-        const {data} = this.props
 
         return (
-            <div className="counter">
                 <div className="counter-wrapper">
-                    <div className="icon-wrapper-energy"> 
-                        <img src={energy} className="icon" alt="energy-icon"/>
+                    <div className={'icon-wrapper-' + this.props.macroType}> 
+                        <img src={this.props.picture} className="icon" alt="icon"/>
                     </div>
                     <div className="counter-number-text">
-                        <p className="counter-number">{data.calorieCount}kCal</p>
-                        <p className="counter-text">Calories</p>
+                        <p className="counter-number">{this.props.macro + this.props.unit}</p>
+                        <p className="counter-text">{this.props.macroName}</p>
                     </div>
                 </div>
-                <div className="counter-wrapper">
-                    <div className="icon-wrapper-chicken"> 
-                        <img src={chicken} className="icon" alt="chicken-icon"/>
-                    </div>
-                    <div className="counter-number-text">
-                        <p className="counter-number">{data.proteinCount}g</p>
-                        <p className="counter-text">Protéines</p>
-                    </div>
-                </div>
-                <div className="counter-wrapper">
-                    <div className="icon-wrapper-apple"> 
-                        <img src={apple} className="icon" alt="apple-icon"/>
-                    </div>
-                    <div className="counter-number-text">
-                        <p className="counter-number">{data.carbohydrateCount}g</p>
-                        <p className="counter-text">Glucides</p>
-                    </div>
-                </div>
-                <div className="counter-wrapper">
-                    <div className="icon-wrapper-cheeseburger"> 
-                        <img src={cheeseburger} className="icon" alt="cheeseburger-icon"/>
-                    </div>
-                    <div className="counter-number-text">
-                        <p className="counter-number">{data.lipidCount}g</p>
-                        <p className="counter-text">Lipides</p>
-                    </div>
-                </div>
-            </div>
         )
     }
 }
