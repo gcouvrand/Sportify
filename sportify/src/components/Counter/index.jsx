@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 
 /**
@@ -29,3 +30,11 @@ export default class Counter extends React.Component {
         )
     }
 }
+
+Counter.propTypes = {
+    macroType: PropTypes.string,
+    picture: PropTypes.string,
+    macro: PropTypes.number,
+    unit: PropTypes.string,
+    macroName: PropTypes.string,
+  }

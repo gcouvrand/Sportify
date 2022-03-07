@@ -1,5 +1,6 @@
 import React from "react";
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
+import PropTypes from "prop-types";
 
 
 /**
@@ -36,3 +37,7 @@ export default class Score extends React.Component {
         )
     }
 }
+
+Score.propTypes = {
+    todayScore: PropTypes.number,
+  }

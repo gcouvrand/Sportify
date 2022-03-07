@@ -1,5 +1,6 @@
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import PropTypes from "prop-types";
 
 /**
  *  Create a graph of the user's average sessions
@@ -48,3 +49,7 @@ const CustomTooltip = ({ active, payload}) => {
   
   return null;
 };
+
+AverageSession.propTypes = {
+  averageSessions: PropTypes.array,
+}

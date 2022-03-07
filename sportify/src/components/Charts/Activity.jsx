@@ -1,5 +1,6 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import PropTypes from "prop-types";
 
 /**
  *  Create a graph of the user's activity
@@ -67,3 +68,7 @@ const CustomTooltip = ({active, payload}) => {
 
   return null;
 };
+
+Activity.propTypes = {
+  sessions: PropTypes.array,
+}

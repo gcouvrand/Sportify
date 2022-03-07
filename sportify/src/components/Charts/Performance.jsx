@@ -1,5 +1,6 @@
 import React from "react";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
+import PropTypes from "prop-types";
 
 /**
  *  Create a graph of the user's performances
@@ -35,4 +36,9 @@ export default class Performance extends React.Component {
       </div>
     );
   }
+}
+
+Performance.propTypes = {
+  kind: PropTypes.array,
+  data: PropTypes.array,
 }

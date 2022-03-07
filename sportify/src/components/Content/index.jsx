@@ -11,6 +11,7 @@ import energy from "../../assets/energy.svg"
 import chicken from "../../assets/chicken.svg"
 import apple from "../../assets/apple.svg"
 import cheeseburger from "../../assets/cheeseburger.svg"
+import PropTypes from 'prop-types'
 
 /**
  *  Uses the GetData method to fetch the datas needed and fill the components with it
@@ -110,3 +111,13 @@ export default class Content extends Component {
         )
     }
 }
+
+Content.propTypes = {
+    firstName: PropTypes.string,
+    userActivity: PropTypes.array,
+    sessions: PropTypes.array,
+    performance: PropTypes.array,
+    score: PropTypes.number,
+    todayScore: PropTypes.number,
+    userInfos: PropTypes.array,
+  }
